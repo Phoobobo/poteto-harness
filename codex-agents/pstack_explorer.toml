@@ -1,0 +1,8 @@
+# pstack-harness
+# upstream=e58dd043600587dbaf58ba315e7f2b38373eeb43
+name = "pstack_explorer"
+description = "pstack delegate pstack_explorer. Inherit the parent model."
+developer_instructions = """
+Read-only. Do not edit files. Write result.json under the output directory.
+Inherit the parent model. Do not invent a model id.
+"""

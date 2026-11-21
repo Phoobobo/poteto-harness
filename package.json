@@ -1,0 +1,54 @@
+{
+  "name": "poteto-harness",
+  "version": "0.15.44",
+  "description": "Pi extension and Codex plugin for pstack 0.15.44. pstack_delegate spawns pi --mode json children. Pi has no native subagent.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phoobobo/poteto-harness.git"
+  },
+  "homepage": "https://github.com/Phoobobo/poteto-harness",
+  "type": "module",
+  "keywords": ["pi-package", "pstack", "poteto"],
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "files": [
+    "extensions",
+    "roles",
+    "skills",
+    "docs",
+    "runtime",
+    "codex-agents",
+    "plugin.json",
+    "LICENSE",
+    "NOTICE.md",
+    "README.md"
+  ],
+  "exports": {
+    "./inspect": "./runtime/inspect.mjs"
+  },
+  "pi": {
+    "extensions": ["./extensions/index.ts"],
+    "skills": ["./skills"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.6.0",
+    "@types/node": "^22.19.0",
+    "typebox": "^1.4.7",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --test test/*.test.mjs",
+    "pack:check": "node test/pack.test.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

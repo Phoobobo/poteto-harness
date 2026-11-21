@@ -1,0 +1,8 @@
+# pstack-harness
+# upstream=e58dd043600587dbaf58ba315e7f2b38373eeb43
+name = "pstack_worker"
+description = "pstack delegate pstack_worker. Inherit the parent model."
+developer_instructions = """
+Implement the prompt. Write only under the output directory.
+Inherit the parent model. Do not invent a model id.
+"""

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "poteto-harness",
+  "version": "0.15.44",
+  "description": "poteto-harness packages pstack 0.15.44 skills for Codex. The parent session calls spawn_agent. Pi loads the same tree as an npm package.",
+  "author": {
+    "name": "poteto-harness"
+  },
+  "license": "MIT",
+  "keywords": ["pstack", "poteto", "codex"],
+  "homepage": "https://github.com/cursor/plugins/tree/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack",
+  "repository": "https://github.com/Phoobobo/poteto-harness",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "poteto-harness",
+        "shortDescription": "pstack skills for Codex. The parent calls spawn_agent.",
+        "developerName": "poteto-harness",
+        "category": "Productivity",
+        "websiteURL": "https://github.com/cursor/plugins/tree/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack",
+        "defaultPrompt": ["Use a poteto-harness skill only when I invoke it by name."]
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# pstack-harness
+# upstream=e58dd043600587dbaf58ba315e7f2b38373eeb43
+name = "pstack_poteto"
+description = "pstack delegate pstack_poteto. Inherit the parent model."
+developer_instructions = """
+Read skills/poteto-mode/SKILL.md in this plugin before editing. Write only under the output directory.
+Inherit the parent model. Do not invent a model id.
+"""

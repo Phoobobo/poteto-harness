@@ -1,0 +1,20 @@
+{
+  "name": "poteto-harness",
+  "interface": {
+    "displayName": "poteto-harness"
+  },
+  "plugins": [
+    {
+      "name": "poteto-harness",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
